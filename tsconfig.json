@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules"],
+      "@/*": ["src/*"],
+      "@/models/*": ["src/models/*"],
+      "@/controllers/*": ["src/controllers/*"],
+      "@/services/*": ["src/services/*"],
+      "@/enums/*": ["src/enums/*"],
+      "@/interfaces/*": ["src/interfaces/*"],
+      "@/middlewares/*": ["src/middlewares/*"],
+      "@/routers/*": ["src/routers/*"],
+      "@/schemas/*": ["src/schemas/*"],
+      "@/seeders/*": ["src/seeders/*"],
+      "@/config/*": ["src/config/*"]
+    },
+    "sourceMap": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "allowJs": true
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.js", "./__test__/**/*.ts"],
+  "exclude": ["./node_modules"]
+}
